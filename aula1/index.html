@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" />
+        <br />
+        <label for="email">E-Mail:</label>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="usuario@dominio.com"
+        />
+        <br />
+        <label for="peso">Peso:</label>
+        <input type="number" name="peso" id="peso" min="10" max="200" />
+        <br />
+        <label for="dataNascimento">Data Nascimento:</label>
+        <input type="date" name="dataNascimento" id="dataNascimento" />
+        <br />
+      </fieldset>
+
+      <input type="checkbox" name="optIn" id="optIn" />
+      <label for="optIn">Quero receber ofertas!</label>
+      <br />
+      <input type="radio" name="plano" id="planoMensal" />
+      <label for="planoMensal">Plano Mensal</label>
+
+      <br />
+      <input type="radio" name="plano" id="planoAnual" />
+      <label for="planoAnual">Plano Anual</label>
+      <br />
+
+      <label for="cidade">Cidade-sede:</label>
+      <select id="cidade" name="cidade">
+        <option value="">Selecione...</option>
+        <option value="cdmx">Cidade do México</option>
+        <option value="ny">Nova York</option>
+        <option value="la">Los Angeles</option>
+        <option value="toronto">Toronto</option>
+      </select>
+      <br />
+
+      <label for="obs">Observações:</label>
+      <textarea name="obs" id="obs" rows="4"></textarea>
+      <br />
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+      <button type="button">Calcular frete</button>
+    </form>
+  </body>
+</html>
