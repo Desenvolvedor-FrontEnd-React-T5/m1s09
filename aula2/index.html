@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formCadastro" action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required />
+      <br />
+
+      <input type="checkbox" name="ingresso" id="ingresso" />
+      <label for="ingresso">Ingresso incluído?</label>
+      <br />
+
+      <fieldset>
+        <legend>Tipo de pacote:</legend>
+
+        <label>
+          <input type="radio" name="pacote" value="economico" required />
+          Econômico
+        </label>
+
+        <label>
+          <input type="radio" name="pacote" value="conforto" />
+          Conforto
+        </label>
+
+        <label>
+          <input type="radio" name="pacote" value="premium" />
+          Premium
+        </label>
+      </fieldset>
+
+      <label for="destino">Destino:</label>
+      <select id="destino" name="destino" required>
+        <option value="">Selecione um destino</option>
+        <option value="cancun">Cancún</option>
+        <option value="fortaleza">Fortaleza</option>
+        <option value="natal">Natal</option>
+        <option value="nova-york">Nova York</option>
+        <option value="miami">Miami</option>
+        <option value="paris">Paris</option>
+        <option value="toquio">Tóquio</option>
+      </select>
+
+      <button type="submit">Enviar!</button>
+    </form>
+  </body>
+</html>
