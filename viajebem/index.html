@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
     <title>Solicite seu orçamento | ViajeBem</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
       <h2>Solicite um orçamento</h2>
       <p>Preencha o formulário e nossa equipe entrará em contato.</p>
 
-      <form action="#" method="post">
+      <form id="form-orcamento" action="#" method="post">
         <div>
           <label for="nome">Nome completo:</label>
           <input
@@ -123,6 +124,8 @@
 
         <button type="submit">Solicitar orçamento</button>
       </form>
+
+      <div id="resumo"></div>
     </div>
   </body>
 </html>
