@@ -1,0 +1,10 @@
+.erro {
+  color: red;
+}
+
+.sucesso {
+  color: green;
+}
+.campo-vazio {
+  border: 2px solid red;
+}
