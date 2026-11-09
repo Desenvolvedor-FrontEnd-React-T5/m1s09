@@ -60,10 +60,7 @@ formulario.addEventListener("submit", (evento) => {
   exibirResumo(dados);
 });
 
-campoObservacoes.addEventListener("input", () => {
-  const quantidade = campoObservacoes.value.length;
-  contador.textContent = `${quantidade} caracteres`;
-});
+
 
 function limparMensagens() {
   erroPacote.textContent = "";
@@ -126,3 +123,8 @@ function adicionarItem(lista, rotulo, valor) {
   item.textContent = `${rotulo}: ${valor}`;
   lista.appendChild(item);
 }
+
+campoObservacoes.addEventListener("input", () => {
+  const quantidade = campoObservacoes.value.length;
+  contador.textContent = `${quantidade} caracteres`;
+});
