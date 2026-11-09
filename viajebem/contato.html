@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | ViajeBem</title>
+    <script src="script-contato.js" defer></script>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Entre em contato com a ViajeBem</h1>
+
+      <form id="form-contato" novalidate>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" />
+        </div>
+
+        <div>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" />
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+
+      <p id="confirmacao"></p>
+    </div>
+  </body>
+</html>

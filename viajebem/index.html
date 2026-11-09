@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilos.css" />
     <title>Solicite seu orçamento | ViajeBem</title>
   </head>
   <body>
@@ -48,6 +49,7 @@
             autocomplete="tel"
             required
           />
+          <span id="erro-telefone" class="mensagem"></span>
         </div>
 
         <div>
@@ -68,7 +70,7 @@
           <legend>Tipo de pacote:</legend>
 
           <label>
-            <input type="radio" name="pacote" value="economico" required />
+            <input type="radio" name="pacote" value="economico" />
             Econômico
           </label>
 
@@ -82,6 +84,7 @@
             Premium
           </label>
         </fieldset>
+        <span id="erro-pacote" class="mensagem"></span>
 
         <fieldset>
           <legend>Extras:</legend>
@@ -120,11 +123,13 @@
             rows="5"
             placeholder="Conte-nos mais sobre sua viagem."
           ></textarea>
+          <p id="contador">0 caracteres</p>
         </div>
 
         <button type="submit">Solicitar orçamento</button>
       </form>
 
+      <p id="mensagem-resultado" class="mensagem"></p>
       <div id="resumo"></div>
     </div>
   </body>
